@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sed -i -e "s/SITENAME/${1}/g" setup.py SITENAME/*.py SITENAME/models/__init__.py SITENAME/handlers/__init__.py
+sed -i '' -e "s/SITENAME/${1}/g" setup.py SITENAME/*.py SITENAME/models/__init__.py SITENAME/handlers/__init__.py
 
 if [[ -d "SITENAME" ]]; then
     mv SITENAME $1
